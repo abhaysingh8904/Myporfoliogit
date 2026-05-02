@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images (1).png">
+  <title>Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="all.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav  class="navbar">
+  <div class="logo">Abhay<span>Singh.</span></div>
+
+  <ul class="nav-links">
+    <li><a href="#hero" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+<!-- <button id="themeToggle" class="dark-toggle">
+  🌙
+</button> -->
+  <a href="cv.pdf" download class="cv-btn">
+    Download CV
+  </a>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+    
+  <div class="hero-left">
+    <h3>Hi, I'm</h3>
+    <h1>Abhay <span>Singh</span></h1>
+    <p class="title">Java Developer | Spring Boot Enthusiast</p>
+    <p>Passionate about building scalable backend systems <br>and solving real-world problems with clean code.</p>
+
+    <div class="buttons">
+      <button class="primary" onclick="goToProjects()">View Work</button>
+      <button class="secondary" onclick="goToContact()">Contact</button>
+    </div>
+
+   <div class="socials">
+
+  <a href="https://github.com/abhaysingh8904" target="_blank">
+    <i class="fa-brands fa-github"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/abhay-singh-384685277" target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+
+  <a href="mailto:abhaybhadoriya90@email.com">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+  <a href="https://www.instagram.com/__abh.ay_/" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  
+
+</div>
+  </div>
+
+  <div class="hero-right">
+    <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" alt="">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+
+  <div class="about-container">
+
+    <!-- LEFT IMAGE -->
+    <div class="about-left">
+      <div class="image-box">
+        <img src="abhaypic.png" alt="Abhay Singh">
+      </div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="about-right">
+
+      <p class="small-title">ABOUT ME</p>
+      <h2>Who I Am</h2>
+
+      <p class="about-text">
+        I’m a passionate Java Developer with strong knowledge of Spring Boot, REST APIs, SQL,
+        and object-oriented programming. I love building scalable backend systems and continuously
+        learning modern technologies.
+      </p>
+
+     <button class="btn" onclick="openAboutModal()">Know More About Me</button>
+
+      <!-- INFO CARDS -->
+      <div class="info-grid">
+        <div class="info">🎓 B.Tech IT</div>
+        <div class="info">📅 2026</div>
+        <div class="info">📍 India</div>
+        <div class="info">💼 Fresher</div>
+      </div>
+      
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+
+  <div class="section-title">
+    <p class="small-title">MY SKILLS</p>
+    <h2>Skills & Technologies</h2>
+  </div>
+
+  <div class="skill-box">
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"> Java
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"> Spring
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"> MySQL
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"> HTML
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"> CSS
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"> JS
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"> Git
+    </div>
+
+  </div>
+
+</section>
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+    <div class="section-title">
+  <p class="small-title">MY PROJECTS</p>
+  </div>
+  <h2>Featured Projects</h2>
+
+  <div class="project-grid">
+
+    <!-- CARD 1 -->
+    <div class="project">
+      <div class="project-top">
+        <h3>Online exam system</h3>
+      </div>
+      <div class="project-body">
+        <p>Built online exam system with authentication, timed tests, automatic evaluation.</p>
+      </div>
+      <button class="project-btn"
+    onclick="openModal('exam')">
+    View Details
+  </button>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="project">
+      <div class="project-top blue">
+        <h3>Insider education</h3>
+      </div>
+      <div class="project-body">
+        <p>Developed Insider feature improving user engagement and personalization</p>
+      </div>
+      <button class="project-btn" onclick="openModal('insider')">View Details</button>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="project">
+      <div class="project-top purple">
+        <h3>Spin quest</h3>
+      </div>
+      <div class="project-body">
+        <p>Designed SpinQuest app enhancing user interaction and experience..</p>
+      </div>
+      <button class="project-btn" onclick="openModal('spin')">View Details</button>
+    </div>
+
+  </div>
+</section>
+<section class="experience">
+
+  <div class="section-title">
+    <p class="small-title">WORK EXPERIENCE</p>
+    <h2>Work Experience</h2>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item left">
+      <div class="content">
+        <h3>Full Stack Developer Intern</h3>
+        <span>Zetheta Algorithms Private Limited • April 2026 - Current</span>
+        <p>Worked on backend development using Java and Spring Boot.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="content">
+        <h3>Software Developer Intern</h3>
+        <span>Elsner Technologies • Dec 2025 <br>Selected (Not Joined)</span>
+        <p>I couldn’t join due to personal reasons.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="content">
+        <h3>Freelance Developer</h3>
+        <span>Self Employed • 2022</span>
+        <p>Developed websites and applications for clients.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<section class="education">
+
+  <div class="section-title">
+    <p class="small-title">EDUCATION</p>
+    <h2>My Education</h2>
+  </div>
+
+  <div class="timeline">
+
+    <!-- CURRENT / HIGHLIGHT -->
+    <div class="timeline-item left ">
+      <div class="content">
+        <h3>🎓 B.Tech in Information Technology</h3>
+        <span>ITM Gwalior • 2022 - 2026</span>
+        <p>Focused on software development and backend systems.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="content">
+        <h3>📘 Higher Secondary (12th)</h3>
+        <span>Govt. Boys H.S. School • 2021 - 2022</span>
+        <p>Completed with science stream.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="content">
+        <h3>📗 Secondary School (10th)</h3>
+        <span>Public Convent H.S. School • 2019 - 2020</span>
+        <p>Strong academic foundation.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="footer">
+
+  <div class="footer-top">
+
+  <!-- LEFT -->
+  <div class="footer-brand">
+    <h2>Abhay<span>Singh</span></h2>
+
+    <p>
+      Crafting scalable backend systems and modern web experiences.
+    </p>
+
+    <div class="contact-wrapper">
+      <button class="contact-btn" onclick="toggleForm()">
+        Get in Touch
+      </button>
+
+      <div id="contactFormElement" class="contact-form">
+        <form action="https://formspree.io/f/mrejbyeg" method="POST">
+  
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
+
+  <button type="submit">Send Message</button>
+
+</form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MIDDLE (NAVIGATION) -->
+  <div class="footer-col">
+    <h4>Navigation</h4>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </div>
+
+  <!-- RIGHT (CONTACT + SOCIAL) -->
+   
+  <div  class="footer-col">
+    <h4>Contact</h4>
+
+    <!-- <p><i class="fa-solid fa-envelope"></i> abhaybhadoriya90@email.com</p> -->
+     <a href="mailto:abhaybhadoriya90@email.com">
+    <i class="fa-solid fa-envelope"></i>abhaybhadoriya90@Gmail.com
+    </a>
+    <p><i class="fa-solid fa-phone"></i> +91 7440334763</p>
+    <p>
+    <i class="fa-solid fa-location-dot"></i>
+    Gwalior, Madhya Pradesh, India
+  </p>
+
+    <div class="socials">
+      <a href="https://github.com/abhaysingh8904"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/abhay-singh-384685277"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/__abh.ay_/"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+
+</div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Abhay Singh. All rights reserved.</p>
+  </div>
+
+</footer>
+
+<div id="toast" class="toast">Message sent successfully ✅</div>
+<script src="portfolio.js"></script>
+<div id="projectModal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal()">×</span>
+
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+
+  </div>
+
+</div>
+<!-- ABOUT MODAL -->
+<div id="aboutModal" class="about-modal">
+
+  <div class="about-modal-content">
+
+    <span class="close" onclick="closeAboutModal()">×</span>
+
+    <div class="about-modal-grid">
+
+      <!-- LEFT IMAGE -->
+      <div class="about-modal-img">
+        <img src="abhaypic.png" alt="About Me">
+      </div>
+
+      <!-- RIGHT TEXT -->
+      <div class="about-modal-text">
+        <h2>About Me</h2>
+        <p>
+          I am Abhay Singh, a passionate Java Developer skilled in Spring Boot,
+          REST APIs, and backend development. I love building scalable systems
+          and solving real-world problems.
+        </p>
+
+        <p>
+          I enjoy learning new technologies and improving my coding skills every day.
+        </p>
+        <!-- IMPORTANT SKILLS -->
+<div class="important-skills">
+
+  <h3>Key Skills</h3>
+
+  <div class="skills-tags">
+
+    <span>Java (17)</span>
+    <span>Spring Boot</span>
+    <span>REST APIs</span>
+    <span>Microservices</span>
+    <span>MySQL</span>
+    <span>Hibernate / JPA</span>
+    <span>JavaScript</span>
+    <span>React (Basic)</span>
+    <span>Data Structures</span>
+    <span>OOP</span>
+    <span>DBMS</span>
+    <span>Operating Systems</span>
+    <span>Agile / SDLC</span>
+
+  </div>
+
+</div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</body>
+    
